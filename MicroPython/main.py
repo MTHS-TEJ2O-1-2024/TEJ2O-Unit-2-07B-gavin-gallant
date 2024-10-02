@@ -7,7 +7,7 @@ This module is a Micro:bit MicroPython program
 from microbit import *
 
 
-display.clear
+display.clear()
 display.show(Image.HAPPY)
 cookie_increase = 1
 
@@ -17,10 +17,10 @@ while True:
         display.scroll(cookie_number)
 
     if cookie_number > 14:
-        cookie_increase += 1
-        cookie_number -= 15
-        display.scroll("Upgraded!")
-        sleep(200) 
+            cookie_increase += 1
+            cookie_number -= 15
+            display.scroll("Upgraded!")
+            sleep(200)
     else:
-        display.scroll("Too Poor!")
-        sleep(200)  
+            display.scroll("Too Poor!")
+            sleep(200)
